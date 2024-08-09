@@ -12,7 +12,6 @@ return {
         require("nvim-treesitter.configs").setup({
             ensure_installed = {
                 "c",
-                "latex",
                 "vim",
                 "vimdoc",
                 "javascript",
