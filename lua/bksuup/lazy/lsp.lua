@@ -22,8 +22,6 @@ return {
         local mason_tool_installer = require("mason-tool-installer")
         local mason_lspconfig = require("mason-lspconfig")
 
-        lsp.preset("recomended")
-
         lsp.on_attach(function(client, bufnr)
             local opts = {buffer = bufnr, remap = false}
             vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
