@@ -50,6 +50,7 @@ return {
                 "bashls",
                 "ansiblels",
                 "gopls",
+                "terraformls",
             }
         })
 
@@ -70,6 +71,7 @@ return {
         require("lspconfig").bashls.setup({})
         require("lspconfig").ansiblels.setup({})
         require("lspconfig").gopls.setup({})
+        require("lspconfig").terraformls.setup({})
 
         require("lspconfig").pyright.setup({
             filetypes = { "python" },
